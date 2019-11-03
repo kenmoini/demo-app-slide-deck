@@ -44,6 +44,12 @@ A simple fork of the reveal.js slide deck application wrapped with some Jenkins 
 4. ??????
 5. PROFIT!!!!!1
 
+#### Pipeline Details
+
+The OpenShift Pipeline will use a built-in Jenkins to create an ImageStream, BuildConfig, and deploy the built application with a DeploymentConfiguration finally exposing the service with a Route.
+
+There is an intentional type in the pipeline as students are meant to debug and fix the simple error.  In doing so students are forced to log into the OSS Jenkins, and you can touch on things such as the glaring red 5-6 errors on start up, how it can't easily be managed or scaled, how the embedded Jenkinsfile in a BuildConfig pipeline is not very developer friendly, etc.
+
 ### Served
 
 1. Do the same steps as above, keeping to the same port so it can run as an unprivileged user.

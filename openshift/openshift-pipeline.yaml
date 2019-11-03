@@ -90,6 +90,18 @@ spec:
                 }
               }
 
+              stage('Tag Image with current version') {
+                steps {
+                  script {
+                    openshift.withCluster() {
+                      openshift.withProject() {
+                        openshift.tag("site-demo-app-slide-deckTYPO:latest", "site-demo-app-slide-deck:${version}")
+                      }
+                    }
+                  }
+                }
+              }
+
               stage('Deploy Application') {
                 steps {
                   script {
