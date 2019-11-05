@@ -3,6 +3,7 @@ kind: Template
 metadata:
   name: demo-slide-deck
   annotations:
+    iconClass: icon-jenkins
     description: "A template that will provision ephemeral Jenkins, the NodeJS Agent ConfigMap, and a BuildConfig pipeline that will deploy the simple application from https://github.com/kenmoini/demo-app-slide-deck"
     displayName: "Workshop Demo - Slide Deck"
     openshift.io/display-name: "Workshop Demo - Slide Deck"
