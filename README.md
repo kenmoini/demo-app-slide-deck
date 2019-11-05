@@ -44,6 +44,8 @@ A simple fork of the reveal.js slide deck application wrapped with some Jenkins 
 4. ??????
 5. PROFIT!!!!!1
 
+***Suggested package:*** Makes use of [openshift-icons](https://github.com/kenmoini/openshift-icons)
+
 #### Pipeline Details
 
 The OpenShift Pipeline will use a built-in Jenkins to create an ImageStream, BuildConfig, and deploy the built application with a DeploymentConfiguration finally exposing the service with a Route.
